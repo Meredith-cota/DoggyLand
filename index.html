@@ -1,55 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoggyLand</title>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="shortcut icon" href="Logo-Patita.png">
+ <title>DoggyLand</title>
+<style>
+    body { 
+      font-family: 'verdana';
+      margin: 0;
+    }
+    header {
+      background-color: darkred;
+      color: rgb(248, 248, 248);
+      padding: 0 10%;
+    }
+    header > h1 { 
+      display: inline-block;
+      margin-left: 25px;
+    }
+    #Logo { 
+      width: 60px;
+      margin-block-start: 25px;
+    }
+    nav { 
+      margin: 20px 10%;
+      margin-left: 180px;
+      
+    }
+    nav > a {
+      padding: 0 15px;
+      color: slategrey;
+    }
+    #Info { 
+      width: 750px;
+      margin: 50px auto;
+    }
+    #Top { 
+      width: 450px;
+      height: 280px;
+      background-color: rgb(235, 196, 158);
+      float: inline-start;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+    #Bottom { 
+      width: 450px;
+      height: 230px;
+      background-color: rgb(235, 196, 158);
+      border-top-color: peru;
+      border-top-style: solid;
+      border-top-width: 3px;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      float: inline-start;
+    }
+    #Top > img { 
+      margin-top: 7%;
+      margin-bottom: 7%;
+      margin-left: 25%;
+      margin-right: 25%;
+      height: 80%;
+    }
+    ul { 
+      padding: 0;
+      margin: 0;
+    }
+    li { 
+      list-style-type: none;
+      margin-left: 30px;
+      margin-top: 15px;
+    }
+    li > p { 
+      margin: 5px;
+    }
+    #Perros { 
+      width: 200px;
+      height: 250px;
+      background-color:silver;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    #Perros > div > a { 
+      color: darkred;
+      text-align: center;
+      margin-left: 15%;
+    }
+</style>
 </head>
 <body>
     <header>
-      <img src="Logo-Patita.jpe" alt="logo" width="30" height="31"> 
-      <h1 style="color: darkred;">
+      <img src="Logo-Patita.png" alt="logo" id="Logo"> 
+      <h1>
           DoggyLand
         </h1>
     </header>
+    <hr/>
     <nav>
-        <div>
-          <a href="#" style="color: peru;">Inicio</a>
-        </div>
-        <div>
-          <a href="#" style="color:slategrey;">Tipos de Perros</a>
-        </div>
-        <div>
-          <a href="#" style="color: peru;">Tienda</a>
-        </div>
-        <div>
-          <a href="#" style="color:slategrey;">Acerca</a>
-        </div>
+          <a href="#">Inicio</a>
+          <a href="#">Tipos de Perros</a>
+          <a href="#">Tienda</a>
+          <a href="#">Acerca</a>
     </nav>
-    <main>
-        <div id="DoggyImagen">
-         <img src="Imagen-pastor-alemán.jpg" alt="Imagen de Perro" width="220" height="200">
-        </div>
-        <div id="Caracteristicas">
-          <ul>
-            <li>
-                <p><b>Raza:</b>Pastor Alemán</p>
-            </li>
-            <li>
-                <p><b>Altura:</b>Macho: 60-65 cm, hembra: 55-60 cm</p>
-            </li>
-            <li>
+    <hr/>
+ <div id="Perros">
+   <div><a href="#">Pastor Alemán</a></div>
+   <div><a href="#">French Poodle</a></div>
+   <div><a href="#">Husky Siberiano</a></div>
+   <div><a href="#">Bulldog</a></div>
+   <div><a href="#">Labrador Retriver</a></div>
+   <div><a href="#">Chihuahua</a></div>
+   <div><a href="#">San Bernando</a></div>
+   <div><a href="#">Doberman</a></div>
+   <div><a href="#">Yorkshire terrier</a></div>
+   <div><a href="#">Schnauzer</a></div>
+ </div>
+ <main>
+    <div id="Info">
+      <div id="Top">
+        <img src="Imagen-pastor-alemán.jpg" alt="Imagen de Perro" width="220" height="200">
+      </div>
+      <div id="Bottom">
+          <ul id="Caracteristicas">
+              <li>
+               <p><b>Raza:</b>Pastor Alemán</p>
+              </li>
+              <li>
+               <p><b>Altura:</b>Macho: 60-65 cm, hembra: 55-60 cm</p>
+              </li>
+              <li>
                 <p><b>Peso:</b>Macho: 30-40 kg, hembra: 22-32 kg</p>
-            </li>
-            <li>
+              </li>
+              <li>
                 <p><b>Origen:</b>Alemania</p>
-            </li>
+              </li>
           </ul>
-        </div>
-    </main>
-    <footer>
-        <a href="#" style="color: peru;">InfoDoggyLand@gmail.com</a>
-    </footer>
+      </div>
+    </div>
+ </main>
 </body>
 </html>
