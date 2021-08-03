@@ -6,90 +6,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="shortcut icon" href="Logo-Patita.png">
  <title>DoggyLand</title>
-<style>
-    body { 
-      font-family: 'verdana';
-      margin: 0;
-    }
-    header {
-      background-color: darkred;
-      color: rgb(248, 248, 248);
-      padding: 0 10%;
-    }
-    header > h1 { 
-      display: inline-block;
-      margin-left: 25px;
-    }
-    #Logo { 
-      width: 60px;
-      margin-block-start: 25px;
-    }
-    nav { 
-      margin: 20px 10%;
-      margin-left: 180px;
-      
-    }
-    nav > a {
-      padding: 0 15px;
-      color: slategrey;
-    }
-    #Info { 
-      width: 750px;
-      margin: 50px auto;
-    }
-    #Top { 
-      width: 450px;
-      height: 280px;
-      background-color: rgb(235, 196, 158);
-      float: inline-start;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
-    }
-    #Bottom { 
-      width: 450px;
-      height: 230px;
-      background-color: rgb(235, 196, 158);
-      border-top-color: peru;
-      border-top-style: solid;
-      border-top-width: 3px;
-      border-bottom-right-radius: 30px;
-      border-bottom-left-radius: 30px;
-      float: inline-start;
-    }
-    #Top > img { 
-      margin-top: 7%;
-      margin-bottom: 7%;
-      margin-left: 25%;
-      margin-right: 25%;
-      height: 80%;
-    }
-    ul { 
-      padding: 0;
-      margin: 0;
-    }
-    li { 
-      list-style-type: none;
-      margin-left: 30px;
-      margin-top: 15px;
-    }
-    li > p { 
-      margin: 5px;
-    }
-    #Perros { 
-      width: 200px;
-      height: 250px;
-      background-color:silver;
-      border-bottom-right-radius: 30px;
-      border-bottom-left-radius: 30px;
-      border-top-left-radius: 30px;
-      border-top-right-radius: 30px;
-    }
-    #Perros > div > a { 
-      color: darkred;
-      text-align: center;
-      margin-left: 15%;
-    }
-</style>
+ <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -99,14 +16,16 @@
         </h1>
     </header>
     <hr/>
-    <nav>
+    <div id="nav">
+      <nav>
           <a href="#">Inicio</a>
           <a href="#">Tipos de Perros</a>
           <a href="#">Tienda</a>
           <a href="#">Acerca</a>
-    </nav>
+      </nav>
+    </div>
     <hr/>
- <div id="Perros">
+ <div id="Perros" class="left">
    <div><a href="#">Pastor Alemán</a></div>
    <div><a href="#">French Poodle</a></div>
    <div><a href="#">Husky Siberiano</a></div>
@@ -119,7 +38,7 @@
    <div><a href="#">Schnauzer</a></div>
  </div>
  <main>
-    <div id="Info">
+    <div id="Info" class="right">
       <div id="Top">
         <img src="Imagen-pastor-alemán.jpg" alt="Imagen de Perro" width="220" height="200">
       </div>
